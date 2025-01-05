@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@100;300;400;500;700;900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     </head>
+    <body>
+        <header>
+            <h1>Find your film</h1>
+            <nav>
+            <a id ="renderWatchlist" href="myWatchlist.html">My watchlist</a>
+            </nav>
+        </header>
+        <main >
+            <div class="search-bar">
+                <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="search-input" type="text" placeholder="Search for a movie">
+                </div>
+            <button id="search-btn">Search</button>
+            </div>
+            <div id="no-result" class="no-result">
+                <h2>Unable to find what you’re looking <span> for. Please try another search.</span></h2>
+            </div>
+            <div  id= "empty-page" class="empty-page">
+                <img src="empty.png">
+                <h3>Start exploring</h3>
+            </div>
+              <div id="movie-list"></div>  
+            </main>
+        <script src="index.js"></script>
+    </body>
+</html>
